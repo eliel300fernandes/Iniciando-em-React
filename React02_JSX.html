@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+    Data: 29/11/2018
+    Hora: 01:36
+-->
+<html>
+    <head>
+        <title>React - React JSX</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- import react -->
+        <script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <!-- materialize.css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+        <link href="../css/default.css" rel="stylesheet" type="text/css"/>
+        <!-- style css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>    
+    </head>
+    <body>
+
+        <!-- Elemento onde será impresso a frase -->
+        <div id="frase"></div>
+
+
+        <script type="text/babel">
+            const nome = 'Jonas';
+            const linguagem = 'React';
+            const frase = <h4>{nome} ficou programando em {linguagem} a noite toda </h4>;
+
+            ReactDOM.render(
+                    frase,
+                    document.getElementById('frase')
+                            );
+        </script>
+
+    </body>
+</html>

@@ -6,10 +6,11 @@ body{
     background:#f3f5f9;
     padding:10%;
 }
-#titulo{ 
+#titulo, #frase{ 
     background:#fafafa;
     border:1px solid lightgray;
     padding:0px 20px;
+    text-align:center;
 }
 
 
